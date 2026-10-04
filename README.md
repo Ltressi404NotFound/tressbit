@@ -57,3 +57,37 @@ TressBit/
 ├── App.js                   # Main application entry and navigator
 ├── app.json                 # Expo native configuration (permissions & background services)
 └── package.json
+⚙️ Getting Started & Installation
+To run TressBit locally on your machine:
+
+Clone the repository:
+
+Bash
+git clone [https://github.com/your-username/TressBit.git](https://github.com/your-username/TressBit.git)
+cd TressBit
+Install dependencies:
+
+Bash
+npm install
+Run the development server (Expo):
+
+Bash
+npx expo start
+Build for Android (Development build required for background audio services):
+
+Bash
+eas build --profile development --platform android
+📱 Permissions Required
+TressBit requests minimal local permissions solely required for offline functionality:
+
+READ_MEDIA_AUDIO / READ_EXTERNAL_STORAGE: To detect and load local music files.
+
+FOREGROUND_SERVICE_MEDIA_PLAYBACK: To ensure music keeps playing when the screen is locked.
+
+POST_NOTIFICATIONS: To display the media playback notification bar.
+
+🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+📄 License
+Distributed under the MIT License. See LICENSE for more information.
